@@ -8,13 +8,46 @@
   <style>
     body {
       text-align: center;
-      background: aquamarine;
+      background: palevioletred;
+
+      font-family: fantasy;
+      color: blue;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 64px;
+    }
+
+    p {
+      font-size: 42px;
+    }
+
+    .blink {
+      animation: blink-animation 1s steps(5, start) infinite;
+      -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
     }
   </style>
   <body>
-    <p>Where are the riots?</p>
-    <p>probably boston common</p>
-    <p>we will be there</p>
-    <p>at the riots<p>
+    <marquee truespeed scrolldelay="10">
+      <h1>Where are the riots?</h1>
+    </marquee>
+
+    <section class="blink">
+      <p>probably boston common</p>
+      <p>we will be there</p>
+      <p>at the riots<p>
+    </section>
+
   </body>
 </html>
