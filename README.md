@@ -1,2 +1,2 @@
-# where-are-the-riots
+# wherearetheriots.com
 Where are the riots?
